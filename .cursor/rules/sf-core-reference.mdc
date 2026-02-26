@@ -1,0 +1,19 @@
+---
+description: Use the Standard Form core codebase (sf-core) as the source of truth when writing or updating Standard Form documentation
+alwaysApply: true
+---
+
+# Standard Form core codebase reference
+
+When working on documentation for **Standard Form** (product, API, scheduling, platform, or backstage):
+
+- **Codebase to use:** **sf-core** (Standard Form core).
+- **Path:** `/Users/elizabethwong/code/sf-core` — refer to this folder for implementation details, types, APIs, and behavior.
+
+## sf-core layout (from CLAUDE.md)
+
+- **application/** — pnpm/turbo monorepo: Next.js apps **platform** and **backstage**, shared packages (e.g. `@workspace/ui`). TypeScript/React, GraphQL codegen, Supabase Basejump.
+- **service/** — Python scheduling agent (Lambda). Docker build, ECR push, Lambda deploy via root Makefile. Contains scheduling_agent/, solvers, formulation, prompts.
+- **supabase/** — migrations, edge functions, Basejump. DB tests: `supabase test db` from repo root.
+
+When documenting features, APIs, or flows, read the relevant parts of sf-core (application, service, or supabase) so docs match the actual product behavior and naming.

@@ -1,0 +1,24 @@
+---
+title: "Version controlling, when and how to regenerate"
+description: "Edit your schedule and regenerate when inputs change"
+---
+
+Each time you generate or regenerate a schedule, the system creates a new **version** — a snapshot of the assignments. The view you see is the latest version.
+
+## When to regenerate
+
+- After changing [people](/creating-block-schedules/people), [blocks](/creating-block-schedules/blocks), [coverage](/creating-block-schedules/minimum-coverage), [mandate](/creating-block-schedules/mandate), [rules](/creating-block-schedules/rules), or [leave](/creating-block-schedules/leave).
+- When you want a fresh solution (e.g. after collecting new leave preferences).
+
+## How to regenerate
+
+Use **Regenerate** or **Refresh** in the schedule view. You'll see a confirmation: *"This will regenerate the schedule based on current inputs. Any draft changes to the schedule will be lost."* Confirm to run the solver again.
+
+## Version controlling
+
+- The current view is the **latest version**. Regenerating **replaces** the current solution with a new one.
+- Any unsaved or draft edits to the schedule grid will be lost when you regenerate — the new result becomes the new current version.
+
+## If regeneration fails
+
+If the new result is **infeasible**, the app will show the infeasible dialog. See [Failure to Generate](/creating-block-schedules/failure-to-generate) for what to review and how to fix it.
