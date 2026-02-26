@@ -1,69 +1,63 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Standard Form",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#F66122",
+    "light": "#F87A3D",
+    "dark": "#D94E0F"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
+  "logo": {
+    "light": "/logo/logo.svg",
+    "dark": "/logo/logo.svg"
+  },
+  "icons": {
+    "library": "lucide"
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Welcome",
+            "icon": "circle-user",
+            "pages": ["index", "welcome/getting-started", "welcome/what-is-standard-form"]
+          },
+          {
+            "group": "Creating Block Schedules",
+            "icon": "list-checks",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "creating-block-schedules/time",
+              "creating-block-schedules/people",
+              "creating-block-schedules/leave",
+              "creating-block-schedules/blocks",
+              "creating-block-schedules/minimum-coverage",
+              "creating-block-schedules/mandate",
+              "creating-block-schedules/rules",
+              "creating-block-schedules/failure-to-generate"
             ]
           },
           {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
+            "group": "Managing Block Schedules",
+            "icon": "refresh-cw",
+            "pages": ["managing-block-schedules/regenerate"]
           },
           {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
+            "group": "Create Shift Schedules",
+            "icon": "calendar-clock",
+            "pages": ["create-shift-schedules/call-schedules", "create-shift-schedules/schedule-links"]
           },
           {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
+            "group": "Settings",
+            "icon": "settings",
+            "pages": ["settings/invite-members", "settings/app-coming-soon"]
           },
           {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
+            "group": "Contact Us",
+            "icon": "message-circle",
+            "pages": ["contact-us/contact"]
           }
         ]
       }
@@ -71,52 +65,31 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Schedule a call",
+          "href": "https://calendar.app.google/7i3T12m5yoTfGC3Y6",
+          "icon": "calendar"
         }
       ]
     }
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Contact",
+        "href": "/contact-us/contact"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    ]
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity"
+    ]
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "socials": {}
   }
 }
